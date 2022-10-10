@@ -1,0 +1,105 @@
+{
+  "id": "ddf8b1e6-5c1a-4fa9-a5d2-c81fbe39a2be",
+  "name": "API Testing",
+  "timestamp": "2022-10-09T21:39:15.008Z",
+  "collection_id": "16978833-43ad684d-3402-4726-8f98-3b0ecdf49196",
+  "folder_id": 0,
+  "environment_id": "0",
+  "totalPass": 3,
+  "totalFail": 0,
+  "results": [
+    {
+      "id": "d07f1c6f-c531-40dd-a456-d9422c5169c0",
+      "name": "Get Book List",
+      "url": "https://postman-library-api.glitch.me/books",
+      "time": 632,
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "tests": {
+        "Status code is 200": true
+      },
+      "testPassFailCounts": {
+        "Status code is 200": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [632],
+      "allTests": [
+        {
+          "Status code is 200": true
+        }
+      ]
+    },
+    {
+      "id": "95651da0-8604-44bc-a79f-62e8113ba23c",
+      "name": "Get Book",
+      "url": "https://postman-library-api.glitch.me/books/ccoj4pM6VhgsizC",
+      "time": 157,
+      "responseCode": {
+        "code": 200,
+        "name": "OK"
+      },
+      "tests": {
+        "Status code is 200": true
+      },
+      "testPassFailCounts": {
+        "Status code is 200": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [157],
+      "allTests": [
+        {
+          "Status code is 200": true
+        }
+      ]
+    },
+    {
+      "id": "2041e754-8fc3-45d8-bbf8-a8381b7adb86",
+      "name": "Get incorrect bookId",
+      "url": "https://postman-library-api.glitch.me/books/123",
+      "time": 193,
+      "responseCode": {
+        "code": 404,
+        "name": "Not Found"
+      },
+      "tests": {
+        "Status code is not 200": true
+      },
+      "testPassFailCounts": {
+        "Status code is not 200": {
+          "pass": 1,
+          "fail": 0
+        }
+      },
+      "times": [193],
+      "allTests": [
+        {
+          "Status code is not 200": true
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "totalTime": 982,
+  "collection": {
+    "requests": [
+      {
+        "id": "d07f1c6f-c531-40dd-a456-d9422c5169c0",
+        "method": "GET"
+      },
+      {
+        "id": "95651da0-8604-44bc-a79f-62e8113ba23c",
+        "method": "GET"
+      },
+      {
+        "id": "2041e754-8fc3-45d8-bbf8-a8381b7adb86",
+        "method": "GET"
+      }
+    ]
+  }
+}
